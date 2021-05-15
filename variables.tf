@@ -1,15 +1,15 @@
 variable "location" {
-  type = string
+  type    = string
   default = "West Europe"
 }
 
 variable "resource_group_name" {
-  type = string
+  type    = string
   default = "example-resources"
 }
 
 variable "address_space" {
-  type = string
+  type    = string
   default = "192.168.0.0/16"
 }
 

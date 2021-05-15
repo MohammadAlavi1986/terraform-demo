@@ -21,11 +21,11 @@ module "network" {
   source  = "app.terraform.io/smash/network/azure"
   version = "1.0.1"
 
-  vnet_name  = "vnet-test"
+  vnet_name           = "vnet-test"
   resource_group_name = azurerm_resource_group.example.name
-  address_space = var.address_space
-  subnets = var.subnets
-  depends_on = [azurerm_resource_group.example]
+  address_space       = var.address_space
+  subnets             = var.subnets
+  depends_on          = [azurerm_resource_group.example]
 }
 
 output "subnet_prefixex" {
