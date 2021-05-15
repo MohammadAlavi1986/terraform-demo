@@ -1,3 +1,15 @@
+terraform {
+
+  backend "remote" {
+    organization = "smash"
+
+    workspaces {
+      name = "terraform-demo-new"
+    }
+  }
+
+}
+
 provider "azurerm" {
   features {}
 }
